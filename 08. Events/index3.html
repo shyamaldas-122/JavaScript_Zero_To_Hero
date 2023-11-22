@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heyy</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const random=function(){
+    console.log(Math.random());
+    }
+    let stop;
+    function startMe(){
+    stop=setInterval(random,1000)
+    }
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(stop);
+    })
+
+    document.querySelector('#start').addEventListener('click',()=>{
+        startMe();
+    })
+</script>
+</html>

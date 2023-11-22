@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating New Element</title>
+</head>
+<body style="background-color: black;">
+    
+</body>
+<script>
+    // <------------------ Creating New Element --------------->
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id="myId"
+
+    // setting custom attribute
+    div.setAttribute('title', 'newTitle')
+    div.style.backgroundColor='green'
+    div.style.padding='20px'
+    div.innerHTML="Hello bruh"
+    document.body.appendChild(div)
+</script>
+</html>
